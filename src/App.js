@@ -1,8 +1,20 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return (
-    <h1>PicHub</h1>
+    <div>
+      <BrowserRouter>
+      <div className='container'>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/about' element={<About />}/>
+        </Routes>
+      </div>
+      </BrowserRouter>
+    </div>
   );
 }
 
