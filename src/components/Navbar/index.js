@@ -14,6 +14,16 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
+          <NavLink to='/login'>
+            Sign in
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/register'>
+            Sign up
+          </NavLink>
+        </li>
+        <li>
           <NavLink to='/about'>
             About
           </NavLink>
